@@ -309,6 +309,9 @@ main {
   border: 0.75rem solid rgb(255, 29, 0);
   transition: border 250ms linear;
 }
+.subject:active {
+  border: 0.75rem solid rgb(255, 254, 0);
+}
 /* Thesis exhibit */
 .thesis_exhibit_container {
   display: flex;
@@ -364,6 +367,15 @@ main {
 .now_then {
   display: inline-flex;
   border: 0.05rem solid rgb(255, 153, 1);
+}
+.fisma:hover,
+.now_then:hover {
+  border: 0.75rem solid rgb(255, 29, 0);
+  transition: border 250ms linear;
+}
+.fisma:active,
+.now_then:active {
+  border: 0.75rem solid rgb(255, 254, 0);
 }
 .fisma {
   background-color: hsl(244, 100%, 50%);
