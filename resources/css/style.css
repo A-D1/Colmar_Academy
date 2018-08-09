@@ -413,6 +413,55 @@ main {
   font-size: 1rem;
   font-weight: 500;
 }
+/* Contact */
+.contact {
+  background-color: rgb(255, 153, 1);
+  border-top: 0.05rem solid rgb(14, 0, 196);
+  padding-bottom: 1rem;
+}
+.contact span {
+  font-family: 'Montserrat', Helvetica, sans-serif;
+  color: rgb(255, 29, 0);
+  display: block;
+  margin: 1rem;
+  font-size: 1.75rem;
+  font-weight: 900;
+  text-shadow: 0.075rem 0.075rem black;
+}
+.view {
+  display: inline-flex;
+  width: 40%;
+  align-items: center;
+  margin: 0.5rem 1rem;
+}
+.view p {
+  font-size: 2rem;
+  padding: 0.5rem;
+  text-align: center;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(255, 254, 0);
+  color: rgb(14, 0, 196);
+}
+.icons {
+  font-size: 1.6rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-right: 15rem;
+  padding-left: 2rem;
+  display: inline;
+  position: relative;
+  left: -19rem;
+}
+.icons i {
+  margin-right: 0.25rem;
+  margin-left: 0.25rem;
+}
+.icons:hover{
+  left: -2rem;
+  transition: left 1s linear 200ms;
+}
 /* Footer */
 footer {
   display: inline-flex;
@@ -441,3 +490,4 @@ footer span:hover {
 }
 footer span:active {
   color: rgb(255, 254, 0);
+/* Media Queries */
