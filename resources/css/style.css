@@ -60,6 +60,9 @@ nav span:hover {
 nav span:active {
   color: rgb(255, 254, 0);
 }
+.phone_nav {
+  display: none;
+}
 /* Main */
 main {
   position: relative;
@@ -240,6 +243,9 @@ main {
 }
 .guest {
   background-color: hsl(244, 100%, 30%)
+}
+.phone_img {
+  display: none;
 }
 /* Centre Bottom */
 .centre_bottom {
@@ -428,6 +434,13 @@ main {
   font-weight: 900;
   text-shadow: 0.075rem 0.075rem black;
 }
+.description {
+  margin: 1rem;
+  font-family: 'PT Sans', sans-serif;
+  color: rgb(14, 0, 196);
+  font-size: 1rem;
+  font-weight: 500;
+}
 .view {
   display: inline-flex;
   width: 40%;
@@ -490,4 +503,123 @@ footer span:hover {
 }
 footer span:active {
   color: rgb(255, 254, 0);
+}
 /* Media Queries */
+@media only screen and (max-width: 840px) {
+  html {
+    font-size: 12px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  header {
+    width: 100%;
+    height: 6rem;
+  }
+  nav {
+    display: none;
+  }
+  .logo p {
+    display: none;
+  }
+  .phone_nav {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 0.5rem;
+    color: rgb(14, 0, 196);
+    font-family: 'Montserrat', sans-serif;
+  }
+  .s {
+    margin-right: 2rem;
+  }
+  .c,
+  .o {
+    margin-right: 9rem;
+  }
+  .phone_nav img,
+  .logo img {
+    height: 4rem;
+  }
+  main {
+    top: 6.15rem;
+    width: 100%;
+  }
+  .jumbotron_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .jumbotron_container img {
+    margin: 0;
+    width: 99%;
+    border: 0;
+  }
+  .text {
+    margin-left: 2rem;
+  }
+  .centre_top_container {
+    display: flex;
+  }
+  .centre_top_left {
+    display: none;
+  }
+  .centre_top_right {
+    width: 100%;
+  }
+  .centre_top_right img {
+    display: none;
+  }
+  .centre_top_right .phone_img {
+    display: block;
+    width: 97%;
+    margin: 0.5rem auto;
+  }
+  .orientation,
+  .campus,
+  .guest {
+    display: block;
+    width: 100%;
+    padding-bottom: 1rem;
+  }
+  .right_text {
+    padding-left: 1rem;
+  }
+  .centre_bottom_title,
+  .thesis_exhibit_title {
+    font-size: 3.5rem;
+  }
+  .subject img,
+  .subject span,
+  .subject p {
+    display: none;
+  }
+  .subject_container {
+    display: block;
+    width: 100%;
+    margin-top: 1rem;
+  }
+  .subject {
+    width: 93%;
+    margin: 1rem auto;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+
+  }
+  .left_side {
+    width: 100%;
+  }
+  .thesis_exhibit_container video {
+    width: 100%;
+  }
+  .thesis_text,
+  .right_side {
+    display: none;
+  }
+  .contact {
+    display: none;
+  }
+  footer span {
+    display: none;
+  }
+}
